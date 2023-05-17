@@ -55,7 +55,7 @@ function HomeScreen() {
                 <Link href="https://etherscan.io/dex/uniswapv2/0x547224f501a40ccf98c81d98f8dd19cb95f83e2e" className='ml-2'>
                   <Image src='/etherscanIcon.webp' width={60} height={60} alt='etherscan'/>
                 </Link>
-                <Link href="https://app.uniswap.org/#/swap" className='ml-2'>
+                <Link href="https://app.uniswap.org/#/swap?outputCurrency=0x547224f501a40ccf98c81d98f8dd19cb95f83e2e" className='ml-2'>
                   <Image src='/uniswapIcon.webp' width={60} height={60} alt='uniswap'/>
                 </Link>
               </div>
@@ -68,7 +68,7 @@ function HomeScreen() {
           {Exchanges.map((item, index) => {
             return (
               <div className='w-full sm:w-1/3 p-2' key={index}>
-                <Link href='https://app.uniswap.org/#/swap'>
+                <Link href='https://app.uniswap.org/#/swap?outputCurrency=0x547224f501a40ccf98c81d98f8dd19cb95f83e2e'>
                   <div className='border border-white rounded-full p-4'>
                     <h2 className='text-gray-100 text-center'>{item.title}</h2>
                   </div>
